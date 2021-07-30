@@ -37,16 +37,16 @@ jobs:
   services:
   - image: mysql:5.7
     environment:
-      MYSQL_DATABASE: review_system
-      MYSQL_USER: review_system
+      MYSQL_DATABASE: base
+      MYSQL_USER: base
       MYSQL_PASSWORD: secret
       MYSQL_ROOT_PASSWORD: root
   - redis:alpine
   environment:
     APP_ENV: testing
     DB_HOST: mysql
-    DB_DATABASE: review_system
-    DB_USERNAME: review_system
+    DB_DATABASE: base
+    DB_USERNAME: base
     DB_PASSWORD: secret
     REDIS_HOST: redis
   script:

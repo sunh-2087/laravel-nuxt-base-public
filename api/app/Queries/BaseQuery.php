@@ -2,9 +2,9 @@
 // gkc_hash_code : 01F20DDQ6AC44VR9TJE1SN7CJ5 ?>
 <?php
 
-namespace App\Repositories;
+namespace App\Queries;
 
-abstract class BaseRepository
+abstract class BaseQuery
 {
     abstract public function model();
 

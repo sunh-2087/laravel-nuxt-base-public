@@ -13,14 +13,14 @@ class MakeModelCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'makee:model {name}';
+    protected $signature = 'make:model {name}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Create model and repository';
+    protected $description = 'Create model and query';
 
     /**
      * Create a new command instance.
@@ -40,10 +40,10 @@ class MakeModelCommand extends Command
     public function handle()
     {
         $this->callSilent('create:model', ['name' => $this->argument('name')]);
-        $this->callSilent('create:repository', ['name' => $this->argument('name')]);
+        $this->callSilent('create:query', ['name' => $this->argument('name')]);
         $this->callSilent('create:resource', ['name' => $this->argument('name')]);
 
-        $this->info('Create model and repository success');
+        $this->info('Create model and query success');
 
     }
 }
