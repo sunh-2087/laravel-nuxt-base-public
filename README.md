@@ -6,6 +6,7 @@
 
 ## Note:
 - This base project is fully intergrate with docker, so you will need to install docker first before i it.
+- This base project using session/cookie authenticate on same domain.
 - Pull request are welcome.
 
 ## 1. What is inside this repository?
